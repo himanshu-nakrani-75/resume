@@ -1,0 +1,209 @@
+    %-------------------------
+    % Resume in LaTeX
+    % Author : Himanshu Nakrani
+    % Based on: ATS-friendly template
+    %-------------------------
+
+    \documentclass[letterpaper,11pt]{article}
+
+    \usepackage{latexsym}
+    \usepackage[empty]{fullpage}
+    \usepackage{titlesec}
+    \usepackage{marvosym}
+    \usepackage[usenames,dvipsnames]{color}
+    \usepackage{verbatim}
+    \usepackage{enumitem}
+    \usepackage[hidelinks]{hyperref}
+    \usepackage{fancyhdr}
+    \usepackage[english]{babel}
+    \usepackage{tabularx}
+    \usepackage{fontawesome5}
+    \usepackage[charter]{mathdesign}
+    \input{glyphtounicode}
+
+    % Ensure that generated PDF is machine readable/ATS parsable
+    \pdfgentounicode=1
+
+    \pagestyle{fancy}
+    \fancyhf{}
+    \fancyfoot{}
+    \renewcommand{\headrulewidth}{0pt}
+    \renewcommand{\footrulewidth}{0pt}
+
+    % Adjust margins
+    \addtolength{\oddsidemargin}{-0.75in}
+    \addtolength{\evensidemargin}{-0.75in}
+    \addtolength{\textwidth}{1.5in}
+    \addtolength{\topmargin}{-0.8in}
+    \addtolength{\textheight}{0.9in}
+
+    \urlstyle{same}
+
+    \raggedbottom
+    \raggedright
+    \setlength{\tabcolsep}{0in}
+
+    % Sections formatting
+    \titleformat{\section}{
+    \vspace{-4pt}\scshape\raggedright\large
+    }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+    % Custom commands
+    \newcommand{\resumeItem}[1]{
+    \item\small{
+        {#1 \vspace{-2pt}}
+    }
+    }
+
+    \newcommand{\resumeSubheading}[4]{
+    \vspace{-2pt}\item
+        \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & #2 \\
+        \textit{\small#3} & \textit{\small #4} \\
+        \end{tabular*}\vspace{-7pt}
+    }
+
+    \newcommand{\resumeSubSubheading}[2]{
+        \item
+        \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+        \textit{\small#1} & \textit{\small #2} \\
+        \end{tabular*}\vspace{-7pt}
+    }
+
+    \newcommand{\resumeProjectHeading}[2]{
+        \item
+        \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+        \small#1 & #2 \\
+        \end{tabular*}\vspace{-7pt}
+    }
+
+    \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+    \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+    \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+    \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+    \newcommand{\resumeItemListStart}{\begin{itemize}}
+    \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+    %-------------------------------------------
+    %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+    \begin{document}
+
+    %----------HEADING----------
+    \begin{center}
+        \textbf{\Huge \scshape Himanshu Nakrani} \\ \vspace{1pt}
+        \small +91-823-845-5702 $|$ \href{mailto:nakrani.himanshu@outlook.com}{\underline{himanshunakrani0@gmail.com}} $|$ 
+        \href{https://www.linkedin.com/in/himanshu-nakrani/}{\underline{LinkedIn}} $|$
+        \href{https://github.com/himanshu-nakrani}{\underline{GitHub}} $|$
+        \href{https://himanshu-nakrani.github.io}{\underline{Portfolio}} $|$
+        \href{https://leetcode.com/u/himanshunakrani0/}{\underline{LeetCode}}
+    \end{center}
+    % %-----------SUMMARY-----------
+    \section{Professional Summary}
+    \small{Generative AI Professional with 2+ years building production LLM applications, RAG systems and scalable AI solutions. Specialized in fine-tuning large language models, Text-to-SQL systems, and AI agent architectures with proven 75\% performance improvements.}
+    %-----------TECHNICAL SKILLS-----------
+    \section{Technical Skills}
+    \begin{itemize}[leftmargin=0.15in, label={}]
+        \small{\item{
+        \textbf{Generative AI \& LLMs}{: Large Language Models, RAG (Retrieval-Augmented Generation), Text-to-SQL, Fine-tuning (LoRA/PEFT), Prompt Engineering, AI Agents, Model Optimization, LangChain, OpenAI API, Azure OpenAI, Oracle Cloud AI, Google ADK} \\
+        \textbf{Backend Development}{: FastAPI, ASP.NET Core, REST APIs, SQLAlchemy, Microservices, API Design, OOP} \\
+        \textbf{Databases}{: SQL, Vector Databases (pgvector), Semantic Search, Query Optimization} \\
+        \textbf{Machine Learning}{: Deep Learning, Model Deployment, Data Augmentation} \\
+        \textbf{Cloud Platforms}{: Azure, AWS, Oracle Cloud Infrastructure (OCI), Databricks, Azure OpenAI Studio} \\
+        \textbf{Programming Languages}{: Python, Java, SQL, C/C++, C\#, Shell/Perl Scripting} \\
+        \textbf{Developer Tools}{: Git, CI/CD, Testing, Model Evaluation} \\
+        }}
+    \end{itemize}
+
+    %-----------EXPERIENCE-----------
+    \section{Professional Experience}
+    \resumeSubHeadingListStart
+
+        \resumeSubheading
+        {State Street Corporation}{Hyderabad, India}
+        {Senior Associate - AI Software Developer}{July 2023 -- Present}
+        \resumeItemListStart
+            \resumeItem{Architected and deployed \textbf{"Alpha Copilot"}, an enterprise LLM-powered Text-to-SQL chatbot enabling natural language queries over structured financial data, serving 100+ internal users}
+            \resumeItem{Engineered scalable backend infrastructure using \textbf{FastAPI and SQLAlchemy}, implementing advanced caching strategies and query optimization techniques that reduced average response time by \textbf{75\% (from 25-30s to 6-8s)}}
+            \resumeItem{Developed production-ready \textbf{Retrieval-Augmented Generation (RAG)} system for extracting actionable insights from fund prospectuses using OpenAI language models and vector embeddings}
+            \resumeItem{Built optimized document processing pipeline with intelligent chunking strategies, semantic embedding generation, and vector database integration for sub-second retrieval times}
+            \resumeItem{Integrated LLM-based data visualization capabilities, automatically generating interactive charts and summaries from query results, improving data accessibility and decision-making speed}
+            \resumeItem{Led backend development for \textbf{WealthAI application}, building real-time portfolio narrative generation system that processes optimizer outputs and delivers personalized investment insights at scale}
+            \resumeItem{Fine-tuned \textbf{GPT-4o mini, GPT-4.1 mini} (Azure OpenAI) and \textbf{Llama 3.1-8B} (Databricks) using supervised fine-tuning and PEFT/LoRA, managing end-to-end ML pipeline including data augmentation, training, and inference optimization}
+            \resumeItem{Conducted research on advanced Text-to-SQL generation techniques, exploring schema-linking methods and few-shot prompting strategies to improve SQL accuracy by 25\%}
+            \resumeItem{Currently developing \textbf{"Agent Forge"}, a no-code AI agent builder platform enabling users to design, register, and deploy custom agents while providing comprehensive observability through real-time trace monitoring and evaluation dashboards}
+            \resumeItem{Implemented comprehensive error handling and achieved \textbf{95\%+ unit test coverage}, significantly improving system reliability and reducing production incidents}
+            \resumeItem{Collaborated with cross-functional teams including business analysts and compliance officers to ensure alignment with regulatory requirements and business objectives}
+        \resumeItemListEnd
+
+        \resumeSubheading
+        {State Street Corporation}{Hyderabad, India}
+        {Software Development Intern}{January 2023 -- June 2023}
+        \resumeItemListStart
+            \resumeItem{Led migration of legacy ideation platform from .NET Core to modern \textbf{FastAPI + ReactJS} stack, improving application performance by 40\% and developer productivity}
+            \resumeItem{Designed and implemented RESTful APIs with SQLite backend, ensuring seamless frontend integration and comprehensive test coverage}
+        \resumeItemListEnd
+
+        \resumeSubheading
+        {Technocolabs Software Inc.}{Remote}
+        {Machine Learning Developer Intern}{June 2022 -- July 2022}
+        \resumeItemListStart
+            \resumeItem{Developed and deployed CNN-based \textbf{Spotify Skip Action Predictor}, achieving 87\% accuracy in real-time song skip prediction}
+            \resumeItem{Built end-to-end ML pipeline for audio classification tasks including data preprocessing, feature engineering, model training, and API deployment}
+        \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+    %-----------EDUCATION-----------
+    \section{Education}
+    \resumeSubHeadingListStart
+        \resumeSubheading
+        {Nirma University}{Ahmedabad, India}
+        {Bachelor of Technology in Electronics and Communication Engineering}{2019 -- 2023}
+    \resumeSubHeadingListEnd
+
+    %-----------PUBLICATIONS-----------
+    \section{Publications \& Research}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+            {\href{https://ieeexplore.ieee.org/abstract/document/11391068}{\textbf{GoT4SQL-DA: A Graph-of-Thoughts Framework for Scalable Text-to-SQL Data Augmentation}}}{FLLM 2025}
+        \resumeProjectHeading
+            {\textbf{GRAFT: Graph-of-Thoughts based Reasoning and Augmentation for Finetuning Text-to-SQL}}{CSCI 2025}
+    \resumeSubHeadingListEnd
+
+    %-----------PROJECTS-----------
+    \section{Key Projects}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+            {\textbf{Intrusion Detection System} $|$ \emph{Python, Machine Learning, Cybersecurity} $|$ \href{https://www.kaggle.com/code/himanshunakrani/intrusion-detection-system}{\underline{Kaggle}}}{}
+            \resumeItemListStart
+            \resumeItem{Developed ML-based network intrusion detection classifier using KDD Cup 1999 dataset with 4.9M connection records, achieving 94\% accuracy in identifying malicious network traffic patterns across multiple attack categories}
+            \resumeItem{Implemented comprehensive feature engineering pipeline and trained ensemble models (Random Forest, XGBoost) for real-time anomaly detection, successfully classifying DoS, Probe, R2L, and U2R attacks}
+            \resumeItemListEnd
+        \resumeProjectHeading
+            {\textbf{Bitcoin Price Prediction (Daily Updates)} $|$ \emph{Python, Deep Learning, Time Series} $|$ \href{https://www.kaggle.com/code/himanshunakrani/bitcoin-price-prediction-updated-daily}{\underline{Kaggle}}}{}
+            \resumeItemListStart
+            \resumeItem{Built automated daily-updated cryptocurrency price forecasting system using LSTM networks on historical Bitcoin data from Cryptocurrency Prices Dataset, incorporating technical indicators and market sentiment features}
+            \resumeItem{Engineered sequential model architecture with dropout regularization and achieved 18\% RMSE reduction compared to baseline models through hyperparameter tuning and walk-forward validation}
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+    %-----------CERTIFICATIONS-----------
+    \section{Certifications}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+            {\textbf{Oracle Cloud Infrastructure Certified Generative AI Professional} $|$ \href{https://catalog-education.oracle.com/ords/certview/sharebadge?id=0512AAC7D2068FE112B1A6E68DB8CBC765B847A44DFBC92B37041027B0254DA6}{\underline{View Certificate}}}{}
+        \resumeProjectHeading
+            {\textbf{Amazon Machine Learning Summer School 2022} $|$ \href{https://drive.google.com/file/d/1QcnKV_IuvO1V8wPcGkjdq9BOOMUys2dG/view?usp=sharing}{\underline{View Certificate}}}{}
+        \resumeProjectHeading
+            {\textbf{AWS Machine Learning Foundations (Udacity)} $|$ \href{https://graduation.udacity.com/confirm/UKMFKVLW}{\underline{View Certificate}}}{}
+        \resumeProjectHeading
+            {\textbf{Goldman Sachs Engineering Virtual Program Participant} $|$ \href{https://drive.google.com/file/d/11EhkrL-sfRJCu_7dkKd6-W-LMhEcTtwT/view}{\underline{View Certificate}}}{}
+        \resumeProjectHeading
+            {\textbf{Generative AI Fundamentals (Databricks)} $|$ \href{https://credentials.databricks.com/70cb412e-beb8-4392-a639-b8658e4de1a8#acc.6W2ghPVN}{\underline{View Certificate}}}{}
+    \resumeSubHeadingListEnd
+
+    %-------------------------------------------
+    \end{document}
