@@ -113,11 +113,11 @@
     \section{Technical Skills}
     \begin{itemize}[leftmargin=0.15in, label={}]
         \small{\item{
-        \textbf{Generative AI \& LLMs}{: Large Language Models, RAG (Retrieval-Augmented Generation), Agentic AI, Multi-agent Systems, AI Guardrails, Text-to-SQL, Fine-tuning (LoRA/PEFT), Prompt Engineering, Embeddings, Model Optimization, LangChain, Hugging Face, OpenAI API, Azure OpenAI, Google ADK} \\
+        \textbf{Generative AI \& LLMs}{: Large Language Models, RAG (Retrieval-Augmented Generation), Agentic AI, Multi-agent Systems, AI Guardrails, Text-to-SQL, Fine-tuning (LoRA/PEFT), TRL, Prompt Engineering, Embeddings, Model Optimization, LangChain, Hugging Face, OpenAI API, Azure OpenAI, Google ADK} \\
         \textbf{Backend Development}{: FastAPI, ASP.NET Core, REST APIs, SQLAlchemy, Microservices, API Design, OOP} \\
         \textbf{Databases}{: SQL, Vector Databases (pgvector), Semantic Search, Query Optimization} \\
-        \textbf{Machine Learning}{: Deep Learning, NLP, Transformers, PyTorch, Model Deployment, Data Augmentation} \\
-        \textbf{Cloud Platforms}{: Azure, AWS, Oracle Cloud Infrastructure (OCI), Databricks, Azure OpenAI Studio} \\
+        \textbf{Machine Learning}{: Deep Learning, NLP, Transformers, PyTorch, JAX/MaxText, Model Deployment, Data Augmentation} \\
+        \textbf{Cloud Platforms}{: Azure, AWS, Google Cloud TPU, Oracle Cloud Infrastructure (OCI), Databricks, Azure OpenAI Studio} \\
         \textbf{Programming Languages}{: Python, Java, SQL, C/C++, C\#, Shell/Perl Scripting} \\
         \textbf{Developer Tools}{: Git, Docker, Harness, CI/CD, MLOps, LLMOps, Model Observability, Testing, Evaluation Frameworks} \\
         }}
@@ -175,16 +175,17 @@
     \section{Key Projects}
     \resumeSubHeadingListStart
         \resumeProjectHeading
+            {\textbf{TinyMathReason-1B: Mathematical Reasoning LLM} $|$ \emph{JAX/MaxText, PyTorch, TRL, Cloud TPU, AMD MI300X, GCS, Python} $|$ \href{https://github.com/himanshu-nakrani/TinyMathReason-1B}{\underline{GitHub}}}{}
+            \resumeItemListStart
+            \resumeItem{Pretrained a \textbf{1.12B parameter} Llama-style decoder-only transformer from scratch on a Google Cloud \textbf{TPU v4-32} cluster using \textbf{MaxText/JAX}, processing a \textbf{300B token} math-heavy dataset with a throughput of \textbf{66 TFLOP/s/device}}
+            \resumeItem{Engineered a distributed data pipeline across parallelized cloud instances, processing \textbf{4 large-scale datasets} (FineWeb-Edu, OpenWebMath, Proof-Pile-2, Stack-Edu) with MinHash deduplication and sequence packing into optimized binary shards on GCS}
+            \resumeItem{Built custom JAX/Orbax to Hugging Face checkpoint conversion utilities and implemented a two-stage post-training curriculum (\textbf{SFT, DPO/GRPO}) using \textbf{TRL} on an \textbf{AMD MI300X} GPU with custom tokenizer extensions for chain-of-thought reasoning}
+            \resumeItemListEnd
+        \resumeProjectHeading
             {\textbf{CogniDoc: RAG Document Q\&A Platform} $|$ \emph{FastAPI, Supabase pgvector, OpenAI, Gemini, Vercel} $|$ \href{https://document-qa-two.vercel.app}{\underline{Live}}}{}
             \resumeItemListStart
             \resumeItem{Developed a production-ready \textbf{Retrieval-Augmented Generation (RAG)} pipeline encompassing document ingestion, intelligent chunking, and context-aware semantic retrieval utilizing \textbf{Supabase pgvector}}
             \resumeItem{Engineered a scalable \textbf{FastAPI} backend with multi-model LLM routing (\textbf{OpenAI, Gemini}) to optimize response latency and relevance, empowering real-time conversational memory in a \textbf{Vercel}-deployed application}
-            \resumeItemListEnd
-        \resumeProjectHeading
-            {\textbf{Intrusion Detection System} $|$ \emph{Python, Machine Learning, Cybersecurity} $|$ \href{https://www.kaggle.com/code/himanshunakrani/intrusion-detection-system}{\underline{Kaggle}}}{}
-            \resumeItemListStart
-            \resumeItem{Developed ML-based network intrusion detection classifier using KDD Cup 1999 dataset with 4.9M connection records, achieving 94\% accuracy in identifying malicious network traffic patterns across multiple attack categories}
-            \resumeItem{Implemented comprehensive feature engineering pipeline and trained ensemble models (Random Forest, XGBoost) for real-time anomaly detection, successfully classifying DoS, Probe, R2L, and U2R attacks}
             \resumeItemListEnd
     \resumeSubHeadingListEnd
 
