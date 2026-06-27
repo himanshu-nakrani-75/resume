@@ -1,0 +1,206 @@
+    %-------------------------
+    % Resume in LaTeX
+    % Author : Himanshu Nakrani
+    % Based on: ATS-friendly template
+    %-------------------------
+
+    \documentclass[letterpaper,11pt]{article}
+
+    \usepackage{latexsym}
+    \usepackage[empty]{fullpage}
+    \usepackage{titlesec}
+    \usepackage{marvosym}
+    \usepackage[usenames,dvipsnames]{color}
+    \usepackage{verbatim}
+    \usepackage{enumitem}
+    \usepackage[hidelinks]{hyperref}
+    \hypersetup{
+        pdfauthor={Himanshu Nakrani},
+        pdftitle={Himanshu Nakrani - Software Engineer Resume},
+        pdfsubject={Resume},
+        pdfkeywords={Software Engineer, Backend, Platform, AI Infrastructure, Distributed Systems, Python, Java, Data Pipelines, Evals, Agentic AI, LLM, Scalability}
+    }
+    \usepackage{fancyhdr}
+    \usepackage[english]{babel}
+    \usepackage{tabularx}
+
+    \usepackage[charter]{mathdesign}
+    % \input{glyphtounicode}
+
+    % Ensure that generated PDF is machine readable/ATS parsable
+    % \pdfgentounicode=1
+
+    \pagestyle{fancy}
+    \fancyhf{}
+    \fancyfoot{}
+    \renewcommand{\headrulewidth}{0pt}
+    \renewcommand{\footrulewidth}{0pt}
+
+    % Adjust margins
+    \addtolength{\oddsidemargin}{-0.75in}
+    \addtolength{\evensidemargin}{-0.75in}
+    \addtolength{\textwidth}{1.5in}
+    \addtolength{\topmargin}{-0.8in}
+    \addtolength{\textheight}{0.9in}
+
+    \urlstyle{same}
+
+    \raggedbottom
+    \raggedright
+    \setlength{\tabcolsep}{0in}
+
+    % Sections formatting
+    \titleformat{\section}{
+    \vspace{-4pt}\scshape\raggedright\large
+    }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+    % Custom commands
+    \newcommand{\resumeItem}[1]{
+    \item\small{
+        {#1 \vspace{-2pt}}
+    }
+    }
+
+    \newcommand{\resumeSubheading}[4]{
+    \vspace{-2pt}\item
+        \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & #2 \\
+        \textit{\small#3} & \textit{\small #4} \\
+        \end{tabular*}\vspace{-7pt}
+    }
+
+    \newcommand{\resumeSubSubheading}[2]{
+        \item
+        \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+        \textit{\small#1} & \textit{\small #2} \\
+        \end{tabular*}\vspace{-7pt}
+    }
+
+    \newcommand{\resumeProjectHeading}[2]{
+        \item
+        \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+        \small#1 & #2 \\
+        \end{tabular*}\vspace{-7pt}
+    }
+
+    \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+    \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+    \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+    \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+    \newcommand{\resumeItemListStart}{\begin{itemize}}
+    \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+    %-------------------------------------------
+    %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+    \begin{document}
+
+    %----------HEADING----------
+    \begin{center}
+        \textbf{\Huge \scshape Himanshu Nakrani} \\ \vspace{1pt}
+        \small +91-823-845-5702 $|$ \href{mailto:himanshunakrani0@gmail.com}{\underline{himanshunakrani0@gmail.com}} $|$
+        Hyderabad, India $|$
+        \href{https://www.linkedin.com/in/himanshu-nakrani/}{\underline{LinkedIn}} $|$
+        \href{https://github.com/himanshu-nakrani}{\underline{GitHub}} $|$
+        \href{https://www.himanshunakrani.me}{\underline{Portfolio}}
+    \end{center}
+    % %-----------SUMMARY-----------
+    \section{Professional Summary}
+    \small{Software Engineer with over 3 years of experience building backend and platform systems for production-grade AI applications, including agentic AI platforms, automated workflows, data pipelines, and evaluation frameworks. Proven expertise in designing scalable, reliable, and observable services that power AI capabilities at enterprise scale, with hands-on experience in LLM infrastructure, model quality loops, and end-to-end feature ownership.}
+    %-----------TECHNICAL SKILLS-----------
+    \section{Technical Skills}
+    \begin{itemize}[leftmargin=0.15in, label={}]
+        \small{\item{
+        \textbf{Programming Languages}{: Python, Java, SQL, Shell Scripting} \\
+        \textbf{Backend \& Platform}{: FastAPI, REST APIs, SQLAlchemy, Microservices Architecture, API Design, Distributed Systems, Data Pipelines, Workflow Automation} \\
+        \textbf{AI Platform \& Infrastructure}{: LLM Infrastructure, Agentic AI, Multi-agent Systems, RAG, Evaluation Frameworks, Model Quality Loops, AI Guardrails, Fine-tuning (LoRA/PEFT), Prompt Engineering, LangChain, LangGraph, OpenAI API, Azure OpenAI, Google ADK} \\
+        \textbf{Databases}{: SQL, PostgreSQL, Vector Databases (pgvector), Semantic Search, Data Modeling, Query Optimization} \\
+        \textbf{Cloud \& DevOps}{: Azure, AWS, Google Cloud TPU, OCI, Databricks, Docker, CI/CD, Harness, Git} \\
+        \textbf{Observability \& Reliability}{: OpenTelemetry (OTEL), Model Observability, Production Monitoring, Testing, MLOps, LLMOps} \\
+        \textbf{ML \& Data}{: Deep Learning, NLP, Transformers, PyTorch, JAX/MaxText, TRL, Data Augmentation, Model Deployment} \\
+        }}
+    \end{itemize}
+
+    %-----------EXPERIENCE-----------
+    \section{Professional Experience}
+    \resumeSubHeadingListStart
+
+        \resumeSubheading
+        {State Street Corporation}{Hyderabad, India}
+        {Software Engineer -- AI Platform}{July 2023 -- Present}
+        \resumeItemListStart
+            \resumeItem{Architected and deployed \textbf{"Alpha Copilot"}, an enterprise AI platform service powering natural language to SQL over structured financial data, owning backend design, API layer, and data pipeline end-to-end, serving 100+ internal users}
+            \resumeItem{Built scalable backend infrastructure using \textbf{FastAPI and SQLAlchemy}, implementing advanced caching, \textbf{latency optimization}, and reliability patterns that reduced average response time by \textbf{75\% (from 25-30s to 6-8s)} while improving system uptime}
+            \resumeItem{Developed production-ready \textbf{RAG data pipeline} for document processing, engineering an optimized ingestion pipeline with intelligent chunking, semantic embeddings, and vector database integration achieving sub-second retrieval at scale}
+            \resumeItem{Integrated LLM-based data visualization capabilities, automatically generating interactive charts and summaries from query results, improving data accessibility and decision-making speed}
+            \resumeItem{Owned end-to-end backend development for \textbf{WealthAI platform}, building real-time data processing services that consume optimizer outputs and deliver personalized insights at scale with high reliability}
+            \resumeItem{Built and managed end-to-end \textbf{LLM infrastructure pipelines} for fine-tuning \textbf{GPT-4o mini, GPT-4.1 mini} (Azure OpenAI) and \textbf{Llama 3.1-8B} (Databricks) using PEFT/LoRA, including data augmentation, training orchestration, and \textbf{model quality evaluation loops}}
+            \resumeItem{Developed automated \textbf{evaluation systems} and benchmarking pipelines for Text-to-SQL generation, implementing schema-linking and few-shot strategies that improved SQL accuracy by 25\%}
+            \resumeItem{Spearheaded development of \textbf{"Agent Forge"}, an enterprise \textbf{AI platform} centralizing agent registration, discovery, and governance --- actively used by \textbf{5+ teams} with \textbf{50+ registered agent workflows}, providing unified metadata, capabilities tracking, and performance indicators across \textbf{multi-agent systems}}
+            \resumeItem{Designed and implemented OTEL-compliant \textbf{observability infrastructure}, \textbf{AI guardrails} with input/output validation, automated \textbf{eval pipelines}, and a no-code \textbf{workflow automation builder} for designing and deploying custom AI agents at scale}
+            \resumeItem{Achieved \textbf{95\%+ test coverage} and streamlined deployment by architecting automated \textbf{CI/CD pipelines} with \textbf{Harness} and \textbf{Docker}, significantly improving \textbf{system reliability} and reducing production incidents}
+            \resumeItem{Participated in design discussions, code reviews, debugging, and production support in a fast-paced Agile environment, collaborating with senior and staff engineers to translate technical designs into production systems}
+        \resumeItemListEnd
+
+        \resumeSubheading
+        {State Street Corporation}{Hyderabad, India}
+        {Software Development Intern}{January 2023 -- June 2023}
+        \resumeItemListStart
+            \resumeItem{Led migration of legacy ideation platform from .NET Core to modern \textbf{FastAPI + ReactJS} stack, improving application performance by 40\% and developer productivity}
+            \resumeItem{Designed and implemented RESTful APIs with SQLite backend, ensuring seamless frontend integration and comprehensive test coverage}
+        \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+    %-----------PUBLICATIONS-----------
+    \section{Publications \& Research}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+            {\href{https://ieeexplore.ieee.org/abstract/document/11391068}{\textbf{GoT4SQL-DA: A Graph-of-Thoughts Framework for Scalable Text-to-SQL Data Augmentation}}}{FLLM 2025}
+        \resumeProjectHeading
+            {\textbf{GRAFT: Graph-of-Thoughts based Reasoning and Augmentation for Finetuning Text-to-SQL}}{CSCI 2025}
+    \resumeSubHeadingListEnd
+
+    %-----------EDUCATION-----------
+    \section{Education}
+    \resumeSubHeadingListStart
+        \resumeSubheading
+        {Nirma University}{Ahmedabad, India}
+        {Bachelor of Technology in Electronics and Communication Engineering}{June 2019 -- July 2023}
+    \resumeSubHeadingListEnd
+
+    %-----------PROJECTS-----------
+    \section{Key Projects}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+            {\textbf{TinyMathReason-1B: Mathematical Reasoning LLM} $|$ \emph{JAX/MaxText, PyTorch, TRL, Cloud TPU, AMD MI300X, GCS, Python} $|$ \href{https://github.com/himanshu-nakrani/TinyMathReason-1B}{\underline{GitHub}}}{}
+            \resumeItemListStart
+            \resumeItem{Pretrained a \textbf{1.12B parameter} Llama-style decoder-only transformer from scratch on a Google Cloud \textbf{TPU v4-32} cluster using \textbf{MaxText/JAX}, processing a \textbf{300B token} math-heavy dataset with a throughput of \textbf{66 TFLOP/s/device}}
+            \resumeItem{Engineered a distributed data pipeline across parallelized cloud instances, processing \textbf{4 large-scale datasets} (FineWeb-Edu, OpenWebMath, Proof-Pile-2, Stack-Edu) with MinHash deduplication and sequence packing into optimized binary shards on GCS}
+            \resumeItem{Built custom JAX/Orbax to Hugging Face checkpoint conversion utilities and implemented a two-stage post-training curriculum (\textbf{SFT, DPO/GRPO}) using \textbf{TRL} on an \textbf{AMD MI300X} GPU with custom tokenizer extensions for chain-of-thought reasoning}
+            \resumeItemListEnd
+        \resumeProjectHeading
+            {\textbf{CogniDoc: RAG Document Q\&A Platform} $|$ \emph{FastAPI, Supabase pgvector, OpenAI, Gemini, Vercel} $|$ \href{https://document-qa-two.vercel.app}{\underline{Live}}}{}
+            \resumeItemListStart
+            \resumeItem{Developed a production-ready \textbf{Retrieval-Augmented Generation (RAG)} pipeline encompassing document ingestion, intelligent chunking, and context-aware semantic retrieval utilizing \textbf{Supabase pgvector}}
+            \resumeItem{Engineered a scalable \textbf{FastAPI} backend with multi-model LLM routing (\textbf{OpenAI, Gemini}) to optimize response latency and relevance, empowering real-time conversational memory in a \textbf{Vercel}-deployed application}
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+    %-----------CERTIFICATIONS-----------
+    \section{Certifications}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+            {\textbf{Oracle Cloud Infrastructure Certified Generative AI Professional} $|$ \href{https://catalog-education.oracle.com/ords/certview/sharebadge?id=0512AAC7D2068FE112B1A6E68DB8CBC765B847A44DFBC92B37041027B0254DA6}{\underline{View Certificate}}}{}
+        \resumeProjectHeading
+            {\textbf{Generative AI Fundamentals (Databricks)} $|$ \href{https://credentials.databricks.com/70cb412e-beb8-4392-a639-b8658e4de1a8\#acc.6W2ghPVN}{\underline{View Certificate}}}{}
+        \resumeProjectHeading
+            {\textbf{Amazon Machine Learning Summer School 2022} $|$ \href{https://drive.google.com/file/d/1QcnKV_IuvO1V8wPcGkjdq9BOOMUys2dG/view?usp=sharing}{\underline{View Certificate}}}{}
+        \resumeProjectHeading
+            {\textbf{AWS Machine Learning Foundations (Udacity)} $|$ \href{https://graduation.udacity.com/confirm/UKMFKVLW}{\underline{View Certificate}}}{}
+    \resumeSubHeadingListEnd
+
+    %-------------------------------------------
+    \end{document}
