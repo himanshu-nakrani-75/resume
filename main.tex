@@ -1,4 +1,4 @@
-    %-------------------------
+%-------------------------
     % Resume in LaTeX
     % Author : Himanshu Nakrani
     % Based on: ATS-friendly template
@@ -53,7 +53,7 @@
 
     % Sections formatting
     \titleformat{\section}{
-    \vspace{-4pt}\scshape\raggedright\large
+    \vspace{-4pt}\bfseries\raggedright\large
     }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
     % Custom commands
@@ -101,7 +101,7 @@
 
     %----------HEADING----------
     \begin{center}
-        \textbf{\Huge \scshape Himanshu Nakrani} \\ \vspace{1pt}
+        \textbf{\Huge Himanshu Nakrani} \\ \vspace{1pt}
         \small +91-823-845-5702 $|$ \href{mailto:himanshunakrani0@gmail.com}{\underline{himanshunakrani0@gmail.com}} $|$
         Hyderabad, India $|$
         \href{https://www.linkedin.com/in/himanshu-nakrani/}{\underline{LinkedIn}} $|$
@@ -110,18 +110,18 @@
     \end{center}
     % %-----------SUMMARY-----------
     \section{Professional Summary}
-    \small{AI Engineer and technical lead with over 3 years of experience architecting and deploying production-grade Generative AI and NLP applications, agentic AI systems, and RAG pipelines. Proven expertise in fine-tuning large language models, developing sophisticated Text-to-SQL systems, and engineering scalable AI inference systems that drive significant performance and efficiency improvements for enterprise AI solutions.}
+    \small{Senior AI Engineer with 3+ years shipping production Generative AI for enterprise finance: agentic AI platforms, RAG pipelines, and Text-to-SQL systems serving 100+ users. Fine-tuned LLMs (GPT-4o mini, Llama 3.1) with end-to-end LLMOps, pretrained a 1.12B-parameter model from scratch, and published two papers on Text-to-SQL.}
     %-----------TECHNICAL SKILLS-----------
     \section{Technical Skills}
     \begin{itemize}[leftmargin=0.15in, label={}]
         \small{\item{
-        \textbf{Generative AI \& LLMs}{: Large Language Models, RAG (Retrieval-Augmented Generation), Agentic AI, Multi-agent Systems, AI Guardrails, Responsible AI, Text-to-SQL, Fine-tuning (LoRA/PEFT), TRL, Prompt Engineering, Embeddings, Model Optimization, LangChain, LangGraph, Hugging Face, OpenAI API, Azure OpenAI, Google ADK} \\
+        \textbf{Generative AI \& LLMs}{: Large Language Models, RAG (Retrieval-Augmented Generation), Agentic AI, Multi-agent Systems, MCP (Model Context Protocol), AI Guardrails, Responsible AI, Text-to-SQL, Fine-tuning (LoRA/PEFT), Prompt Engineering, Model Optimization, vLLM (Inference Serving), LangChain, LangGraph, Hugging Face, OpenAI API, Azure OpenAI, Google ADK} \\
         \textbf{Backend Development}{: FastAPI, REST APIs, SQLAlchemy, Microservices, API Design} \\
         \textbf{Databases}{: SQL, Vector Databases (pgvector), Semantic Search, Query Optimization} \\
-        \textbf{Machine Learning}{: Deep Learning, NLP, Transformers, PyTorch, JAX/MaxText, Data Pipelines, Model Deployment, Data Augmentation} \\
+        \textbf{Machine Learning}{: Deep Learning, NLP, Transformers, PyTorch, Data Pipelines, Model Deployment, Data Augmentation} \\
         \textbf{Cloud Platforms}{: Azure, AWS, Google Cloud TPU, Oracle Cloud Infrastructure (OCI), Databricks} \\
         \textbf{Programming Languages}{: Python, Java, SQL, Shell Scripting} \\
-        \textbf{Developer Tools}{: Git, Docker, Harness, CI/CD, MLOps, LLMOps, Model Observability, Testing, Evaluation Frameworks} \\
+        \textbf{Developer Tools}{: Git, Docker, Kubernetes, Harness, CI/CD, MLOps, LLMOps, Model Observability, Testing, Evaluation Frameworks} \\
         }}
     \end{itemize}
 
@@ -131,19 +131,17 @@
 
         \resumeSubheading
         {State Street Corporation}{Hyderabad, India}
-        {Emerging Lead - AI Engineer}{July 2023 -- Present}
+        {Senior AI Engineer (Emerging Lead)}{July 2023 -- Present}
         \resumeItemListStart
-            \resumeItem{Architected and deployed \textbf{"Alpha Copilot"}, an enterprise LLM-powered Text-to-SQL chatbot enabling natural language queries over structured financial data, serving 100+ internal users}
+            \resumeItem{Architected and deployed \textbf{"Alpha Copilot"}, an enterprise LLM-powered Text-to-SQL chatbot enabling natural language queries over structured financial data for 100+ internal users, with integrated LLM-generated data visualizations, interactive charts, and summaries accelerating decision-making}
             \resumeItem{Engineered scalable AI inference infrastructure using \textbf{FastAPI and SQLAlchemy}, implementing advanced caching and \textbf{latency optimization} techniques that reduced average response time by \textbf{75\% (from 25-30s to 6-8s)}}
             \resumeItem{Developed production-ready \textbf{RAG system} for extracting actionable insights from fund prospectuses, engineering an optimized document pipeline with intelligent chunking, semantic embeddings, and vector database integration achieving sub-second retrieval times}
-            \resumeItem{Integrated LLM-based data visualization capabilities, automatically generating interactive charts and summaries from query results, improving data accessibility and decision-making speed}
-            \resumeItem{Led backend development for \textbf{WealthAI application}, building real-time portfolio narrative generation system that processes optimizer outputs and delivers personalized investment insights at scale}
+            \resumeItem{Led backend development for \textbf{WealthAI application}, building real-time portfolio narrative generation system that processes optimizer outputs and delivers personalized investment insights at scale, collaborating with cross-functional teams in an Agile environment}
             \resumeItem{Fine-tuned \textbf{GPT-4o mini, GPT-4.1 mini} (Azure OpenAI) and \textbf{Llama 3.1-8B} (Databricks) using supervised fine-tuning and PEFT/LoRA, managing end-to-end LLMOps pipeline including data augmentation, training, and inference optimization}
             \resumeItem{Conducted research on advanced Text-to-SQL generation techniques, exploring schema-linking methods and few-shot prompting strategies to improve SQL accuracy by 25\%}
             \resumeItem{Spearheaded development of \textbf{"Agent Forge"}, an enterprise \textbf{agentic AI} platform centralizing agent registration, discovery, and governance --- actively used by \textbf{5+ business teams} with \textbf{50+ registered agent workflows}, providing a unified inventory of metadata, capabilities, and performance indicators across \textbf{multi-agent systems}}
-            \resumeItem{Designed and implemented OTEL-compliant \textbf{model observability}, advanced \textbf{AI guardrails} with input/output validation and content filtering, and automated evaluation pipelines for \textbf{Responsible AI} compliance across all registered agents; building a no-code agentic workflow builder for visually designing and deploying custom AI agents}
+            \resumeItem{Designed and implemented OTEL-compliant \textbf{model observability}, advanced \textbf{AI guardrails} with input/output validation and content filtering, and automated evaluation pipelines for \textbf{Responsible AI} and regulatory compliance across all registered agents; building a no-code agentic workflow builder for visually designing and deploying custom AI agents}
             \resumeItem{Achieved \textbf{95\%+ unit test coverage} and streamlined deployment workflows by architecting automated \textbf{CI/CD pipelines} with \textbf{Harness} and \textbf{Docker}, significantly improving system reliability and reducing production incidents}
-            \resumeItem{Collaborated with cross-functional teams in an Agile environment, partnering with business analysts and compliance officers to align deliverables with regulatory requirements and business objectives}
         \resumeItemListEnd
 
         \resumeSubheading
@@ -165,23 +163,15 @@
             {\textbf{GRAFT: Graph-of-Thoughts based Reasoning and Augmentation for Finetuning Text-to-SQL}}{CSCI 2025}
     \resumeSubHeadingListEnd
 
-    %-----------EDUCATION-----------
-    \section{Education}
-    \resumeSubHeadingListStart
-        \resumeSubheading
-        {Nirma University}{Ahmedabad, India}
-        {Bachelor of Technology in Electronics and Communication Engineering}{June 2019 -- July 2023}
-    \resumeSubHeadingListEnd
-
     %-----------PROJECTS-----------
     \section{Key Projects}
     \resumeSubHeadingListStart
         \resumeProjectHeading
-            {\textbf{TinyMathReason-1B: Mathematical Reasoning LLM} $|$ \emph{JAX/MaxText, PyTorch, TRL, Cloud TPU, AMD MI300X, GCS, Python} $|$ \href{https://github.com/himanshu-nakrani/TinyMathReason-1B}{\underline{GitHub}}}{}
+            {\textbf{TinyMathReason-1B: Mathematical Reasoning LLM} $|$ \emph{JAX/MaxText, PyTorch, Cloud TPU, AMD MI300X, GCS, Python} $|$ \href{https://github.com/himanshu-nakrani/TinyMathReason-1B}{\underline{GitHub}}}{}
             \resumeItemListStart
             \resumeItem{Pretrained a \textbf{1.12B parameter} Llama-style decoder-only transformer from scratch on a Google Cloud \textbf{TPU v4-32} cluster using \textbf{MaxText/JAX}, processing a \textbf{300B token} math-heavy dataset with a throughput of \textbf{66 TFLOP/s/device}}
             \resumeItem{Engineered a distributed data pipeline across parallelized cloud instances, processing \textbf{4 large-scale datasets} (FineWeb-Edu, OpenWebMath, Proof-Pile-2, Stack-Edu) with MinHash deduplication and sequence packing into optimized binary shards on GCS}
-            \resumeItem{Built custom JAX/Orbax to Hugging Face checkpoint conversion utilities and implemented a two-stage post-training curriculum (\textbf{SFT, DPO/GRPO}) using \textbf{TRL} on an \textbf{AMD MI300X} GPU with custom tokenizer extensions for chain-of-thought reasoning}
+            \resumeItem{Built custom JAX/Orbax to Hugging Face checkpoint conversion utilities and implemented a two-stage post-training curriculum (\textbf{SFT, DPO/GRPO}) on an \textbf{AMD MI300X} GPU with custom tokenizer extensions for chain-of-thought reasoning}
             \resumeItemListEnd
         \resumeProjectHeading
             {\textbf{Aegis: Agent Evaluation \& Guardrails Harness} $|$ \emph{Google Gemini + ADK, FastAPI, PostgreSQL} $|$ \href{https://github.com/himanshu-nakrani/Aegis}{\underline{GitHub}}}{}
@@ -190,6 +180,14 @@
             \resumeItem{Leveraged Google ADK primitives (SequentialAgent, ParallelAgent, LoopAgent) to implement structured multi-agent patterns with shared state management}
             \resumeItem{Developed LLM-as-Judge evaluation and policy-based guardrails with real-time tracing, enabling safe and measurable deployment of agentic applications}
             \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+    %-----------EDUCATION-----------
+    \section{Education}
+    \resumeSubHeadingListStart
+        \resumeSubheading
+        {Nirma University}{Ahmedabad, India}
+        {Bachelor of Technology in Electronics and Communication Engineering}{June 2019 -- July 2023}
     \resumeSubHeadingListEnd
 
     %-----------CERTIFICATIONS-----------
